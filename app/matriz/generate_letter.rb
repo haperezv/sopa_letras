@@ -34,7 +34,7 @@ class GenerateLetter
                  end
                  elsif  i == 1
                      palabra[i].length.times do |j|
-                         matriz[9][j] = palabra[i][j]
+                         matriz[i-1][j+1] = palabra[i][j]
                      end
                  elsif  i == 2
                      palabra[i].length.times do |j|
@@ -46,7 +46,7 @@ class GenerateLetter
                      end
                  elsif  i == 4
                      palabra[i].length.times do |j|
-                         matriz[j][8] = palabra[i][j]
+                         matriz[j][10] = palabra[i][j]
                      end
                  elsif  i == 5
                      palabra.length.times do |j|
