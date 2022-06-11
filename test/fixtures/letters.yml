@@ -1,9 +1,15 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# == Schema Information
+#
+# Table name: letters
+#
+#  id         :integer          not null, primary key
+#  question   :text
+#  response   :text
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 
-one:
-  question: MyText
-  response: MyText
-
-two:
-  question: MyText
-  response: MyText
+#base de pruebas yml para el test
+letter1:
+  response: "HERENCIA"
+  question: "La  _______es específica de la programación orientada a objetos, donde una clase nueva se crea a partir de una clase existente"

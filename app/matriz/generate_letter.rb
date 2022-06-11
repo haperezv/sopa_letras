@@ -1,10 +1,12 @@
+#logica del programa
 class GenerateLetter
 
+        # generar una matriz de 10x10
         def generate
-            # generar una matriz de 10x10
             matriz = Array.new(16) { Array.new(16) }
             letras = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
             arreglo = []
+            # trae la palabra de la base de datos
             palabra1 =  Letter.all
             
             palabra1.each do |palabra|
@@ -23,7 +25,7 @@ class GenerateLetter
 
         end 
 
-        
+    # metodo para combinar las palabras con la matriz
     def  completaPalabra(palabra, matriz)
        
         i = 0
