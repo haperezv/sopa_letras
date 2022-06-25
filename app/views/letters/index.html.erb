@@ -16,12 +16,13 @@
           </tbody>
       </table>
   </div>
-  <div class=" p-4 ps-md-0">
+  <div class=" p-4 ps-md-0 words">
     <h5 class="mt-0">Completa las frases con las palabras encontradas en la sopa de letras.</h5>
-    <p>
+    <ul>
     <%@letters.each do |letter| %>
-        <%=letter.question%> <br>
+        <li id = <%=letter.response%>>
+        <%= letter.question%></li>
     <% end %>
-    </p>
+    </ul>
   </div>
 </div>
