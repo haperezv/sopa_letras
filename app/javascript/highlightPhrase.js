@@ -9,7 +9,6 @@ document.querySelectorAll('.letter').forEach(function(letter){
         palabra.push(letra);
         let palabraSecreta = palabra.join('');
 
-
         if(palabraSecreta === 'VARIABLES' ){
             searchLetter(palabra);
             palabras(palabraSecreta);
